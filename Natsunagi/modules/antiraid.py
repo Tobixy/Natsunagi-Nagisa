@@ -9,7 +9,7 @@ from telegram.utils.helpers import mention_html
 
 from Natsunagi import LOGGER as log
 from Natsunagi.modules.log_channel import loggable
-from Natsunagi.mdoules.helper_funcs.anonymous import user_admin as u_admin, AdminPerms, resolve_user as res_user
+from Natsunagi.modules.helper_funcs.anonymous import user_admin as u_admin, AdminPerms, resolve_user as res_user
 from Natsunagi.modules.helper_funcs.chat_status import connection_status, user_admin_no_reply
 from Natsunagi.modules.helper_funcs.decorators import natsunagicmd, natsunagicallback
 from Natsunagi.modules.cron_jobs import j
