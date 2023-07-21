@@ -927,7 +927,7 @@ def button(update: Update, context: CallbackContext) -> str:
 
 from Natsunagi.modules.language import gs
 
-def get_help(chat)
+def get_help:(chat)
     return gs(chat, "admin_help")
 
 SET_DESC_HANDLER = CommandHandler(
