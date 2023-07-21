@@ -1,6 +1,6 @@
 future
 emoji
-pytimeparse==1.0.8
+pytimeparse==1.1.8
 lxml
 wget
 gtts
