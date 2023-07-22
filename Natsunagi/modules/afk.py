@@ -1,8 +1,7 @@
 import time
-
 from telegram import MessageEntity, ParseMode
 from telegram.error import BadRequest
-from telegram.ext import Filters
+from telegram.ext import Filters, MessageHandler
 
 from Natsunagi import REDIS
 from Natsunagi.modules.helper_funcs.readable_time import get_readable_time
