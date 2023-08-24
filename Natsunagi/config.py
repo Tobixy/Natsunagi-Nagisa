@@ -35,7 +35,7 @@ class Config(object):
     )
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules
-    MONGO_URI = "mongo+srv"
+    MONGO_URI = "mongodb+srv://Shivam10:rLh2OeAtAbtn2L1B@cluster0.m7nxa0j.mongodb.net/?retryWrites=true&w=majority"
     LOAD = []
     NO_LOAD = []
     WEBHOOK = False
