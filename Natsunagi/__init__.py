@@ -19,6 +19,7 @@ from telegram import Chat
 from telegraph import Telegraph
 from telethon import TelegramClient
 from telethon.sessions import MemorySession
+from Natsunagi.config import Development as Config
 
 StartTime = time.time()
 
