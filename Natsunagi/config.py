@@ -24,7 +24,7 @@ class Config(object):
     EVENT_LOGS = -1001952724315
     ERROR_LOGS = -1001952724315
 SQLALCHEMY_DATABASE_URI = "postgres://rrqdvdez:icPxWx-GG7EKxam8H17GVfxC75ZaXxR3@balarama.db.elephantsql.com/rrqdvdez"  # needed for any database modules
-    MONGO_URI = "mongodb+srv://Shivam10:rLh2OeAtAbtn2L1B@cluster0.m7nxa0j.mongodb.net/?retryWrites=true&w=majority"
+    MONGO_URI = DB_URL
     LOAD = []
     NO_LOAD = []
     WEBHOOK = False
@@ -33,7 +33,7 @@ SQLALCHEMY_DATABASE_URI = "postgres://rrqdvdez:icPxWx-GG7EKxam8H17GVfxC75ZaXxR3@
     URL = None
     SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
-    MONGO_URI = "mongodb+srv://Shivam10:rLh2OeAtAbtn2L1B@cluster0.m7nxa0j.mongodb.net/?retryWrites=true&w=majority"
+    MONGO_URI = DB_URL
     
 
     DRAGONS = get_user_list("elevated_users.json", "sudos")
