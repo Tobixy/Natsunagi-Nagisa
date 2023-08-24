@@ -1,6 +1,5 @@
 import json
 import os
-from path.to.your.ConfigModule import Config
 
 
 def get_user_list(config, key):
@@ -9,10 +8,10 @@ def get_user_list(config, key):
 
 
 # Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
-class Development(Config):
-    LOGGER = True
-    TOKEN = "6279286573:AAEozVzLkMArtH1BQCgoQtXKXYzHMAvt258"
-    
+class Config(object):
+   LOGGER = True
+   
+TOKEN = "6279286573:AAEozVzLkMArtH1BQCgoQtXKXYzHMAvt258"  
 API_ID = 28374181
 API_HASH = "00b7ca7f535e816590db39e76f85d0c7"
 APP_ID = 28374181
