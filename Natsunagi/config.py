@@ -14,27 +14,27 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 123456  # integer value, dont use ""
-    API_HASH = "awoo"
-    APP_ID = 8172
-    APP_HASH ="KNTL"
-    DB_URL = "JQUE"
-    TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 945137470  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "FurryChemistry"
-    BOT_USERNAME = "NatsunagiProBot"
-    SUPPORT_CHAT = "NatsunagiCorporationGroup"  # Your own group for support, do not add the @
+    API_ID = 28374181  # integer value, dont use ""
+    API_HASH = "00b7ca7f535e816590db39e76f85d0c7"
+    APP_ID = 28374181
+    APP_HASH ="00b7ca7f535e816590db39e76f85d0c7"
+    DB_URL = "mongodb+srv://Shivam10:rLh2OeAtAbtn2L1B@cluster0.m7nxa0j.mongodb.net/?retryWrites=true&w=majority"
+    TOKEN = "6279286573:AAEozVzLkMArtH1BQCgoQtXKXYzHMAvt258"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 5715764478  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "Tobixy"
+    BOT_USERNAME = "Test_wla_bot"
+    SUPPORT_CHAT = "botsupportx"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001748076180
+        -1001952724315
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001748076180
+        -1001952724315
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
     ERROR_LOGS = (
-         -1001657496255
+         -1001952724315
     )
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = "postgres://rrqdvdez:icPxWx-GG7EKxam8H17GVfxC75ZaXxR3@balarama.db.elephantsql.com/rrqdvdez"  # needed for any database modules
     MONGO_URI = "mongodb+srv://Shivam10:rLh2OeAtAbtn2L1B@cluster0.m7nxa0j.mongodb.net/?retryWrites=true&w=majority"
     LOAD = []
     NO_LOAD = []
@@ -44,7 +44,7 @@ class Config(object):
     URL = None
     SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
-    MONGO_URI = "KNTL"
+    MONGO_URI = "mongodb+srv://Shivam10:rLh2OeAtAbtn2L1B@cluster0.m7nxa0j.mongodb.net/?retryWrites=true&w=majority"
     
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
