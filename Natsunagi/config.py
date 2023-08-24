@@ -1,5 +1,6 @@
 import json
 import os
+from path.to.your.ConfigModule import Config
 
 
 def get_user_list(config, key):
