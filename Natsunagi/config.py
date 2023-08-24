@@ -8,15 +8,15 @@ def get_user_list(config, key):
 
 
 # Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
-class Config(object):
+class Development(Config):
     LOGGER = True
-
+    TOKEN = "6279286573:AAEozVzLkMArtH1BQCgoQtXKXYzHMAvt258"
+    
 API_ID = 28374181
 API_HASH = "00b7ca7f535e816590db39e76f85d0c7"
 APP_ID = 28374181
 APP_HASH = "00b7ca7f535e816590db39e76f85d0c7"
 DB_URL = "mongodb+srv://Shivam10:rLh2OeAtAbtn2L1B@cluster0.m7nxa0j.mongodb.net/?retryWrites=true&w=majority"
-TOKEN = "6279286573:AAEozVzLkMArtH1BQCgoQtXKXYzHMAvt258"
 OWNER_ID = 5715764478
 OWNER_USERNAME = "Tobixy"
 BOT_USERNAME = "Test_wla_bot"
