@@ -1,4 +1,3 @@
-# Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 import json
 import os
 
@@ -11,30 +10,20 @@ def get_user_list(config, key):
 # Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 class Config(object):
     LOGGER = True
-    # REQUIRED
-    # Login to https://my.telegram.org and fill in these slots with the details given by it
-
-    API_ID = 28374181  # integer value, dont use ""
+    API_ID = 28374181
     API_HASH = "00b7ca7f535e816590db39e76f85d0c7"
     APP_ID = 28374181
-    APP_HASH ="00b7ca7f535e816590db39e76f85d0c7"
+    APP_HASH = "00b7ca7f535e816590db39e76f85d0c7"
     DB_URL = "mongodb+srv://Shivam10:rLh2OeAtAbtn2L1B@cluster0.m7nxa0j.mongodb.net/?retryWrites=true&w=majority"
-    TOKEN = "6279286573:AAEozVzLkMArtH1BQCgoQtXKXYzHMAvt258"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 5715764478  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    TOKEN = "your_bot_token_here"
+    OWNER_ID = 5715764478
     OWNER_USERNAME = "Tobixy"
     BOT_USERNAME = "Test_wla_bot"
-    SUPPORT_CHAT = "botsupportx"  # Your own group for support, do not add the @
-    JOIN_LOGGER = (
-        -1001952724315
-    )  # Prints any new group the bot is added to, prints just the name and ID.
-    EVENT_LOGS = (
-        -1001952724315
-    )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
-    ERROR_LOGS = (
-         -1001952724315
-    )
-    # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "postgres://rrqdvdez:icPxWx-GG7EKxam8H17GVfxC75ZaXxR3@balarama.db.elephantsql.com/rrqdvdez"  # needed for any database modules
+    SUPPORT_CHAT = "botsupportx"
+    JOIN_LOGGER = -1001952724315
+    EVENT_LOGS = -1001952724315
+    ERROR_LOGS = -1001952724315
+SQLALCHEMY_DATABASE_URI = "postgres://rrqdvdez:icPxWx-GG7EKxam8H17GVfxC75ZaXxR3@balarama.db.elephantsql.com/rrqdvdez"  # needed for any database modules
     MONGO_URI = "mongodb+srv://Shivam10:rLh2OeAtAbtn2L1B@cluster0.m7nxa0j.mongodb.net/?retryWrites=true&w=majority"
     LOAD = []
     NO_LOAD = []
@@ -46,17 +35,14 @@ class Config(object):
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
     MONGO_URI = "mongodb+srv://Shivam10:rLh2OeAtAbtn2L1B@cluster0.m7nxa0j.mongodb.net/?retryWrites=true&w=majority"
     
-    # OPTIONAL
-    ##List of id's -  (not usernames) for users which have sudo access to the bot.
+
     DRAGONS = get_user_list("elevated_users.json", "sudos")
-    ##List of id's - (not usernames) for developers who will have the same perms as the owner
     DEV_USERS = get_user_list("elevated_users.json", "devs")
-    ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
     DEMONS = get_user_list("elevated_users.json", "supports")
-    # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
     TIGERS = get_user_list("elevated_users.json", "tigers")
     WOLVES = get_user_list("elevated_users.json", "whitelists")
-    DONATION_LINK = None  # EG, paypal
+    # Other lists and configurations...
+DONATION_LINK = None  # EG, paypal
     CERT_PATH = None
     PORT = 5000
     DEL_CMDS = True  # Delete commands that users dont have access to, like delete /ban if a non admin uses it.
@@ -87,10 +73,11 @@ class Config(object):
     BOT_NAME = "Natsunagi Nagisa"
     BOT_API_URL = "https://api.telegram.org/bot"
     MONGO_DB = "Natsunagi"
-    
+
 class Production(Config):
     LOGGER = True
 
 
 class Development(Config):
     LOGGER = True
+    
