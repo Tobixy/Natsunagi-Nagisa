@@ -9,7 +9,8 @@ def get_user_list(config, key):
 
 # Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 class Config(object):
-LOGGER = True
+    LOGGER = True
+
 API_ID = 28374181
 API_HASH = "00b7ca7f535e816590db39e76f85d0c7"
 APP_ID = 28374181
